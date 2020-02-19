@@ -1,0 +1,28 @@
+<html>
+  <head>
+   <title>1 - Desafio Modulo 1</title>
+  </head> 
+    <body>
+      <script>
+        
+      var endereco = 
+          {
+          rua: "Rua dos pinheiros",
+          numero: 1293,
+          bairro: "Centro",
+          cidade: "São Paulo",
+          uf: "SP"
+          };
+
+      function Juntar(endereco) {
+        
+      return `O usuário mora em ${endereco.cidade} / ${endereco.uf}, no bairro ${endereco.bairro}, na rua "${endereco.rua}" com nº ${endereco.numero}.`
+      }
+
+      var junto = Juntar(endereco);
+
+      console.log(junto);
+
+      </script>
+    </body>
+</html>

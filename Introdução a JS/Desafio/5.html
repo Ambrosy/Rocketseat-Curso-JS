@@ -1,0 +1,32 @@
+<html>
+  <head>
+   <title>5 - Desafio Modulo 1</title>
+  </head> 
+    <body>
+      
+      <script>
+        var usuarios = [
+        {
+        nome: "Diego",
+        habilidades: ["Javascript", "ReactJS", "Redux"]
+        },
+        {
+        nome: "Gabriel",
+        habilidades: ["VueJS", "Ruby on Rails", "Elixir"]
+        }
+        ];
+
+        function habilidades(usuarios){
+
+          for (usuario of usuarios) {
+            console.log(
+                `O ${usuario.nome} possui as habilidades: ${usuario.habilidades.join(", ")}.`);
+        };
+        };
+
+        var hab = habilidades(usuarios);
+        console.log(hab);
+
+      </script>
+    </body>
+</html>
