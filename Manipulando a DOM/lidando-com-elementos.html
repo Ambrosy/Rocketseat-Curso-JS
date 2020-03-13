@@ -1,0 +1,31 @@
+<html>
+<meta charset="UTF-8">  
+  <head>
+  
+  </head>
+  <body>
+   <div id="app">
+      <input id="nome"/>
+   </div>
+  
+  </body>
+  
+  <script>
+    var linkElement = document.createElement('a');
+
+    linkElement.setAttribute('href', 'http://google.com.br');
+    linkElement.setAttribute('title', 'Site do google');
+
+    var textElement = document.createTextNode('Acesse o Google');
+
+    linkElement.appendChild(textElement);//atribuir o textElement ao linkElement
+
+    var containerElement = document.querySelector('#app'); //buscando a div no html
+
+    containerElement.appendChild(linkElement); //atribuibindo o linkElement dentro da div
+
+    var inputElement = document.querySelector('#nome'); //buscando o input no html
+    containerElement.removeChild(inputElement);//tirar o inputElement dentro da div
+
+  </script>
+</html>

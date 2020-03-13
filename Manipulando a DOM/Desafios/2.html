@@ -1,0 +1,50 @@
+<html>
+<meta charset="UTF-8">  
+  <head>
+  Desafio 2
+  </head>
+  <body>
+   <div id="interativebtn">
+     <button class="botao">
+       Clique aqui
+     </button>
+   </div>
+  
+  </body>
+  
+  <script>
+    var btnElement = document.querySelector('button.botao');
+    
+    function getRandomColor() {
+      var letters = "0123456789ABCDEF";
+      var color = "#";
+        for (var i = 0; i < 6; i++) {
+        color += letters[Math.floor(Math.random() * 16)];
+        }
+        return color;
+        }
+
+    var newColor = getRandomColor();
+
+    btnElement.onclick = function GerarBloco(seq){
+      var seq = '0';  
+
+      var boxElement = document.createElement('div');
+      boxElement.setAttribute('id',seq);
+      boxElement.style.width = 100;
+      boxElement.style.height = 100;
+      boxElement.style.backgroundColor = '#f00';
+      var containerElement = document.querySelector('#interativebtn');
+    
+      containerElement.appendChild(boxElement);
+      
+      boxElement.onmouseover = function(){
+        boxElement.style.backgroundColor = newColor;
+
+      }
+    }
+        
+    
+
+  </script>
+</html>

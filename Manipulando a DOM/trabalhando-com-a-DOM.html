@@ -1,0 +1,24 @@
+<html>
+<meta charset="UTF-8">  
+  <head>
+  
+  </head>
+  <body>
+    <div id="app">
+      <input type="text" name="nome" value=""/>
+   
+      <button class="botao"> Adicionar </button>
+    </div>
+  
+  </body>
+  
+  <script>
+    var inputElement = document.querySelector('input[name=nome]');//referenciando o input no html                           
+    var btnElement = document.querySelector('button.botao');//referenciando o button no html
+    
+    btnElement.onclick = function(){
+      var text = inputElement.value;
+      alert(text);
+    };//Mostra o valor do input na funcao global alert
+  </script>
+</html>

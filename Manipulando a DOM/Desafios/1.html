@@ -1,0 +1,35 @@
+<html>
+<meta charset="UTF-8">  
+  <head>
+  Desafio 1
+  </head>
+  <body>
+   <div id="interativebtn">
+     <button class="botao">
+       Clique aqui
+     </button>
+   </div>
+  
+  </body>
+  
+  <script>
+    var btnElement = document.querySelector('button.botao');
+    
+
+    btnElement.onclick = function GerarBloco(seq){
+      var seq = '0';  
+   
+      var boxElement = document.createElement('div');
+      boxElement.setAttribute('id',seq);
+      boxElement.style.width = 100;
+      boxElement.style.height = 100;
+      boxElement.style.backgroundColor = '#f00';
+      var containerElement = document.querySelector('#interativebtn');
+    
+      containerElement.appendChild(boxElement);
+
+    
+      
+    }
+  </script>
+</html>

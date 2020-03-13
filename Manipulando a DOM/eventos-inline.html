@@ -1,0 +1,32 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Curso JavaScript - Manipulando a DOM</title>
+  </head>
+  <body>
+    <div id="app">
+      <button onmouseover= "mostraAlerta()">Passe o cursor por cima</button>
+      <p>
+      <button onclick="mostrarAlertaclick()">Clique</button>
+      </p>
+
+      <input onkeypress="digitouAlgo()"/>
+    </div>
+
+
+    <script>
+      function mostraAlerta(){
+        alert('Passou o cursor por cima');
+      }// alert é uma função universal do javascript
+      
+      function mostrarAlertaclick(){
+        alert('Clicou no botao');
+      }
+
+      function digitouAlgo(){
+        alert('Digitou algo');
+      }
+    </script>
+  </body>
+
+</html>

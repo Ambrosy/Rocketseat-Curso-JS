@@ -1,0 +1,30 @@
+<html>
+<meta charset="UTF-8">  
+  <head>
+  Desafio 3
+  </head>
+  <body>
+    
+    <ul></ul>
+    
+  
+  </body>
+  
+  <script>
+    var nomes =["Diego","Gabriel","Lucas"];
+   
+    var unorderedlistElement = document.querySelector('ul');
+    
+    
+    for(const nome of nomes){
+
+      var listElement = document.createElement('li');
+      unorderedlistElement.appendChild(listElement);  
+      
+      var textElement = document.createTextNode(nome);
+      listElement.appendChild(textElement); 
+   }
+    
+
+  </script>
+</html>
